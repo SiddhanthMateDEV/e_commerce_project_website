@@ -15,16 +15,17 @@ body, html {
     background-color: black;
 }
 
-
+.header{
+    margin: 10px;
+    padding: 10px;
+}
 
 .main {
     position: relative;
     z-index: 1;
     background-color: black; 
     display: block;
-    /* margin: 50px; */
     place-items: center;
-    padding: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -40,7 +41,7 @@ body, html {
     padding: 70px;
     margin: auto;
     border-radius: 30px;
-
+    height: 20px;
 }
 
 .logo{
@@ -52,20 +53,27 @@ body, html {
 }
 
 .search{
-    padding: 0;
+    padding: 30px;
     margin: 30px;
     font-size: 1em;
-    /* width: 20px; */
-    /* height: 20px; */
-    margin-right: auto;
-    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* position: relative; */
     margin-left: 80%;
+    /* left: 20% */
 }
 
 .search-items-1{
-    width: 80%;
-    padding: 10px 40px 10px 10px;
+    position: absolute;
+    /* width: 80%; */
+    padding: 10px 60px 10px 10px;
     outline: none;
+    /* left: 20%; */
+}
+
+.search i{
+    left: 85%;
 }
 
 .search .fa-search{
@@ -80,6 +88,7 @@ body, html {
 .nav-bar-2{
     background-color: black;
     padding: 5px;
+    margin-top: 20px;
 }
 
 
@@ -143,17 +152,20 @@ table{
 
 .row-1{
     background-color: black;
+    /* margin: 50px; */
 }
 
 
 .item-row-1-div {
-    background-image: url("/e_commerce_project_website/images/frontPageImage.jpeg");
+    background-image: url("/e_commerce_project_website/images/front-page.png");
     padding: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50px;
     /* margin-top: 0px; */
+    margin: 50px;
+
 }
 
 
@@ -299,7 +311,55 @@ table{
     border-radius: 7px;
 }
 
+/* ----------------------------- */
 
+.tool-row td{
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid white;
+}
+
+
+.tools{
+    color: white;
+    display: flex;
+    /* margin: 20px; */
+    padding: 50px;
+    /* overflow-x: scroll; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    /* border: 1px solid white; */
+    height: 500px;
+    /* width: 100%; */
+    margin: 150px;
+    /* width: 1200px; */
+}
+
+.tools > div{
+    padding: 100px;
+    margin: 60px;
+    border: 1px solid white;
+    background-color: black;
+    height: 250px;
+    width: 200px;
+    margin: 50px;
+    border-radius: 20px;
+    border-radius: 1px solid var(--black);
+}
+
+/* .scrolling-wrapper-tools{
+    overflow-x: scroll;
+    width: auto;
+    display: flex;
+    width: 700px;
+} */
+
+
+
+
+/* ----------------------------- */
 
 .EOF-table{
     border-spacing: 30px;
@@ -325,6 +385,10 @@ table{
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
+    font-size: 1.2em;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
     /* margin: 2px; */
 }
 
