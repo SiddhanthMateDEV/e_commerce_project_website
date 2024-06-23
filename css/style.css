@@ -3,6 +3,7 @@
 :root{
     --green: rgb(102, 210, 120); 
     --black: rgb(63, 65, 63);
+    --blue: rgb(69, 113, 255);
     --item_padding: 120px;
     --item_margin: 30px;
 }
@@ -13,21 +14,38 @@ body, html {
     height: 100%;
     width: 100%;
     background-color: black;
+    font-family: 'Roboto';
 }
 
 .header{
-    margin: 10px;
-    padding: 10px;
+    position: fixed;
+    width: 100%;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* border: 1px solid  white; */
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 2px black;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 
 .main {
-    position: relative;
-    z-index: 1;
+    /* position: absolute; */
     background-color: black; 
-    display: block;
     place-items: center;
+    display: flex;
+    flex-direction: column;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
+    margin-top: 400px;
+    padding: 20px;
 }
 
 
@@ -36,20 +54,22 @@ body, html {
     background-color: var(--green);
     display: flex;
     position: relative;
+    /* border: 1px solid  white; */
+    width: 85%;
     align-items: center;
-    justify-content: space-between;
-    padding: 70px;
-    margin: auto;
+    justify-content: center;
+    padding: 80px;
+    margin: 20px;
+    gap: 200px;
     border-radius: 30px;
     height: 20px;
 }
 
 .logo{
     font-size: 3.5em;
+    /* border: 1px solid  white; */
     color: black;
-    margin-left: auto;
-    margin-right: 70%;
-    position: absolute;
+    margin-left: 0;
 }
 
 .search{
@@ -59,12 +79,13 @@ body, html {
     align-items: center;
     justify-content: center;
     display: flex;
-    /* position: relative; */
-    margin-left: 80%;
-    /* left: 20% */
+    /* border: 1px solid white; */
+    width: 230px;
+    margin-left: 15%;
 }
 
 .search-items-1{
+    /* border: 1px solid white; */
     position: absolute;
     /* width: 80%; */
     padding: 10px 60px 10px 10px;
@@ -72,54 +93,56 @@ body, html {
     /* left: 20%; */
 }
 
-.search i{
-    left: 85%;
-}
 
 .search .fa-search{
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
+    position: relative;
+    /* display: flex-end; */
+    margin-left: 230px;
     color: #d8d0d0;
 }
 
 
 .nav-bar-2{
-    background-color: black;
-    padding: 5px;
-    margin-top: 20px;
+    background-color: var(--green);
+    padding: 0px;
+    color: black;
+    border-radius: 150px;
+    width: 50%;
+    margin: 10px;
+    /* border: 1px solid white; */
 }
 
 
 .navigation-items{
-    font-size: 2em;
-    display: flex;
-    color: white;
-    /* margin: 10px; */
+    font-size: 1.5em;
+    color: black;
+    /* border: 1px solid  white; */
+    height: 60px;
     justify-content: space-around;
     align-items: center;
+    /* margin-left: 5%; */
+
 }
 
 .navigation-items ul{
     display: flex;
     align-items: center;
     list-style-type: none;
-    margin: 5px;
-    padding: 5px;
+    gap: 50px;
 }
 
 .navigation-items ul li{
-    margin: 40px;
-    /* padding: 20px; */
+    /* margin: 40px; */
+    padding: 10px;
 }
 
 .navigation-items ul li .dropdown{
-    /* margin: 5px; */
-    /* padding: 5px; */
+    margin: 10px;
+    padding: 10px;
     display: none;
     position: absolute;
-    background-color: black;
+    color: black;
+    background-color: white;
     border-radius: 20px;
     z-index: 1;
 }
@@ -129,43 +152,57 @@ body, html {
     cursor: pointer;
 }
 
-.navigation-items ul li .dropdown li{
+/* .navigation-items ul li .dropdown li{
     padding: 8px 16px;
-}
+} */
 
 /* ------------------------------------ */
 
-table{
-    border-collapse: collapse;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-
-
 
 .items{
+    position: absolute;
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
 }
 
 .row-1{
     background-color: black;
-    /* margin: 50px; */
 }
 
 
+.items {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+
+}
+
+.item-row-1 {
+    display: start;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
 .item-row-1-div {
     background-image: url("/e_commerce_project_website/images/front-page.png");
-    padding: 200px;
+    /* padding: 100px; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50px;
-    /* margin-top: 0px; */
-    margin: 50px;
-
+    box-shadow: 10px 10px 10px white;
+    /* border: 1px solid white; */
+    display: flex;
+    width: 70%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -177,7 +214,6 @@ table{
 }
 
 .row-2 .items-header{
-    /* width: 40px; */
     padding: 30px;
     border: 2px solid black;
     font-size: 20px;
@@ -205,7 +241,6 @@ table{
 }
 
 .scrolling-wrapper{
-    /* position: relative; */
     background-color: black;
     border: 3px solid black;
     display: flex;
@@ -313,31 +348,47 @@ table{
 
 /* ----------------------------- */
 
+/* .tool-row{ */
+    /* gap: 20px */
+/* } */
+
+
+.APIs{
+    background-image: url(/e_commerce_project_website/images/api-coll.webp);
+    border-radius: 40px;
+    background-image: cover;
+}
+
+.algo-lib{
+    background-image: url(/e_commerce_project_website/images/algo-library.webp);
+}
+
+.DataSets{
+    background-image: url(/e_commerce_project_website/images/dataset.webp);
+}
+
+
 .tool-row td{
     justify-content: center;
     align-items: center;
     background-color: white;
     border: 1px solid white;
+    /* gap: 50px; */
 }
 
 
 .tools{
     color: white;
     display: flex;
-    /* margin: 20px; */
     padding: 50px;
-    /* overflow-x: scroll; */
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    /* border: 1px solid white; */
     height: 500px;
-    /* width: 100%; */
     margin: 150px;
-    /* width: 1200px; */
 }
 
-.tools > div{
+.tools div{
     padding: 100px;
     margin: 60px;
     border: 1px solid white;
@@ -345,7 +396,6 @@ table{
     height: 250px;
     width: 200px;
     margin: 50px;
-    border-radius: 20px;
     border-radius: 1px solid var(--black);
 }
 
@@ -361,9 +411,14 @@ table{
 
 /* ----------------------------- */
 
+
+
 .EOF-table{
     border-spacing: 30px;
     border-collapse: separate;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .EOF-div{
